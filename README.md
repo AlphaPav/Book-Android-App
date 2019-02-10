@@ -1,4 +1,4 @@
-# Book-Android-App
+# Book-Android-App #
 Independently completed the winter semester homework app in "Intelligent Terminal Software Development".
 
 - Android + Java Web + MySQL
@@ -6,14 +6,17 @@ Independently completed the winter semester homework app in "Intelligent Termina
 	- Eclipse project files: `/Code/JavaWeb/BookApp`
 	- MySQL table files: `/Code/MySQL/`
 - Video: https://youtu.be/t9BUiNKTN0w
-## System
-### Overview
+## System ##
+### Overview ###
+
 <img src="/Screenshots/overview.png" >
-### Client (Android)
+### Client (Android) ###
+
 <img src="/Screenshots/android.png" >
-### Server (Java Web)
+### Server (Java Web) ###
 <img src="/Screenshots/javaweb.png" >
-## Demo
+
+## Demo ##
 <img src="/Screenshots/pic1.png" width="300" >
 
 <p float="left">
