@@ -8,10 +8,9 @@ Independently completed the winter semester homework app in "Intelligent Termina
 - Video: https://youtu.be/t9BUiNKTN0w
 ## Demo
 <img src="/Screenshots/pic1.png">
-
 <figure class="half">
-    <img src="/Screenshots/pic4.jpg" width="300">
-	<img src="/Screenshots/pic3.jpg" width="300">
+    <img src="/Screenshots/pic4.jpg" width="100">
+	<img src="/Screenshots/pic3.jpg" width="100">
 </figure>
 
 <figure class="half">
