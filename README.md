@@ -9,9 +9,9 @@ Independently completed the winter semester homework app in "Intelligent Termina
 ## Demo
 <img src="/Screenshots/pic1.png">
 
-
 <figure class="half">
-    <img src="/Screenshots/pic4.jpg" width="250"><img src="/Screenshots/pic3.jpg" width="250">
+    <img src="/Screenshots/pic4.jpg" width="300">
+	<img src="/Screenshots/pic3.jpg" width="300">
 </figure>
 
 <figure class="half">
@@ -29,6 +29,7 @@ Independently completed the winter semester homework app in "Intelligent Termina
     <img src="/Screenshots/pic7.jpg" width="300">
     <img src="/Screenshots/pic8.jpg" width="300">
 </figure>
+
 <figure class="half">
     <img src="/Screenshots/pic9.jpg" width="300">
     <img src="/Screenshots/pic10.jpg" width="300">
