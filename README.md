@@ -9,15 +9,15 @@ Independently completed the winter semester homework app in "Intelligent Termina
 ## System ##
 ### Overview ###
 
-<img src="/Screenshots/overview.png" >
+<img src="/Screenshots/overview.png" />
 ### Client (Android) ###
 
-<img src="/Screenshots/android.png" >
+<img src="/Screenshots/android.png" />
 ### Server (Java Web) ###
-<img src="/Screenshots/javaweb.png" >
+<img src="/Screenshots/javaweb.png" />
 
 ## Demo ##
-<img src="/Screenshots/pic1.png" width="300" >
+<img src="/Screenshots/pic1.png" width="300" />
 
 <p float="left">
   <img src="/Screenshots/pic4.jpg" width="300" />
