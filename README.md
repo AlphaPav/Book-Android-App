@@ -10,10 +10,10 @@ Independently completed the winter semester homework app in "Intelligent Termina
 ### Overview ###
 
 <img src="/Screenshots/overview.png" />
-### Client (Android) ###
+- Client (Android)
 
 <img src="/Screenshots/android.png" />
-### Server (Java Web) ###
+- Server (Java Web)
 <img src="/Screenshots/javaweb.png" />
 
 ## Demo ##
