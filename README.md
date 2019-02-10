@@ -7,7 +7,8 @@ Independently completed the winter semester homework app in "Intelligent Termina
 	- MySQL table files: `/Code/MySQL/`
 - Video: https://youtu.be/t9BUiNKTN0w
 ## Demo
-<img src="/Screenshots/pic1.png">
+<img src="/Screenshots/pic1.png" width="300" >
+
 <p float="left">
   <img src="/Screenshots/pic4.jpg" width="300" />
   <img src="/Screenshots/pic3.jpg" width="300" /> 
