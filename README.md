@@ -11,8 +11,7 @@ Independently completed the winter semester homework app in "Intelligent Termina
 
 
 <figure class="half">
-    <img src="/Screenshots/pic4.jpg" width="300">
-    <img src="/Screenshots/pic3.jpg" width="300">
+    <img src="/Screenshots/pic4.jpg" width="250"><img src="/Screenshots/pic3.jpg" width="250">
 </figure>
 
 <figure class="half">
