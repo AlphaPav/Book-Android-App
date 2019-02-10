@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ZJUBook</string>
+    <string name="app_discribe">Book Selling Information Platform for ZJUers</string>
+    <string name="app_discribe_ch">ZJU书籍出售信息平台</string>
+    <string name="app_copyright">Designed by Xie Chulin.</string>
+    <string name="rememberpassword">请输入账号</string>
+    <string name="autologin">请输入密码</string>
+    <string name="textlogin_id">请输入账号</string>
+    <string name="textlogin_password">请输入密码</string>
+    <string name="text_loginbutton">登陆</string>
+
+</resources>

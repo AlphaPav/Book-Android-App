@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MybookManagerActivity">
+
+
+    <include layout="@layout/headline_updatemybook" android:id="@+id/top"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/top"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+      >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <com.example.alphapav.book.util.BookView
+                    android:id="@+id/addbook_originalimg"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/icons8reading512" />
+
+            </RelativeLayout>
+
+            <!--<TextView-->
+                <!--android:id="@+id/ISBNresult"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="8dp" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="8dp"-->
+                <!--android:text="请补充以下信息" />-->
+
+
+            <TableLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="售价"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/addbook_sellprice"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:selectAllOnFocus="true"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="类别"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/addbook_spinner_booktype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp" />
+                </TableRow>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="描述"
+                    android:textSize="16sp" />
+
+
+                <EditText
+                    android:id="@+id/addbook_description"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:layout_margin="5dp"
+                    android:gravity="top"
+                    android:maxLines="5"
+                    android:minHeight="80dp"
+
+                    android:textSize="14sp" />
+
+                <TableRow android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="现状图"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/addbool_selectImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="100dp"
+                        android:text="选择图片"
+                        android:textSize="16sp" />
+                </TableRow>
+
+
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+
+                >
+
+                <com.example.alphapav.book.util.BookView
+                    android:id="@+id/addbook_tempimg"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/icons8study512" />
+
+            </RelativeLayout>
+
+
+            <TableLayout
+                android:id="@+id/addbook_tablelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="书名"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/addbook_bookname"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:selectAllOnFocus="true"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="作者"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/addbook_author"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:selectAllOnFocus="true"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="出版社"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/addbook_press"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:selectAllOnFocus="true"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ISBN"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/addbook_ISBN"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:selectAllOnFocus="true"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="原价"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/addbook_originalprice"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:selectAllOnFocus="true"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="摘要"
+                        android:textSize="16sp" />
+
+
+                </TableRow>
+
+                <EditText
+                    android:id="@+id/addbook_abstract"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edit_bg"
+                    android:gravity="top"
+                    android:minLines="5"
+
+                    android:textSize="14sp" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="目录"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <EditText
+                    android:id="@+id/addbook_catalog"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edit_bg"
+                    android:gravity="top"
+                    android:minLines="5"
+
+                    android:textSize="14sp" />
+
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/modifybook_ok"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shapebigbutton"
+            android:text="更新书籍"
+            android:layout_alignParentLeft="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/deletebook_ok"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shapebigbutton"
+
+            android:layout_alignParentRight="true"
+            android:text="删除书籍"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

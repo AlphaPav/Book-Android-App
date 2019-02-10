@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android" >-->
+
+    <!--&lt;!&ndash; 設置一個黑色邊框 &ndash;&gt;-->
+    <!--<stroke android:width="2px" android:color="#000000"/>-->
+    <!--&lt;!&ndash; 漸變 &ndash;&gt;-->
+    <!--<gradient-->
+        <!--android:angle="270"-->
+        <!--android:endColor="#C0C0C0"-->
+        <!--android:startColor="#FCD209" />-->
+    <!--&lt;!&ndash; 設置一下邊距,讓空間大一點 &ndash;&gt;-->
+    <!--<padding-->
+        <!--android:left="5dp"-->
+        <!--android:top="5dp"-->
+        <!--android:right="5dp"-->
+        <!--android:bottom="5dp"/>-->
+
+<!--</shape>-->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="10dp"></corners>
+    <stroke android:color="#767676"
+        android:width="1dp"></stroke>
+</shape>

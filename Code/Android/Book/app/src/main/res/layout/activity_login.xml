@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:id="@+id/login_view"
+            android:layout_width="400dp"
+            android:layout_height="800dp"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/logo_img"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icons8reading512"
+
+                />
+
+            <EditText
+                android:id="@+id/login_edit_account"
+                android:layout_width="400dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/logo_img"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="0dp"
+                android:drawableLeft="@android:drawable/ic_menu_myplaces"
+                android:hint="请输入您的用户名"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/login_edit_psw"
+                android:layout_width="400dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/login_edit_account"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+                android:ems="10"
+                android:hint="请输入您的密码"
+                android:inputType="textPassword" />
+
+            <CheckBox
+                android:id="@+id/login_remember"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/login_edit_psw"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="记住密码"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/login_btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_remember"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="30dp"
+                android:background="@color/lightcoral"
+                android:text="登陆"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/login_btn_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_btn_login"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="#56b9b4"
+                android:text="注册"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

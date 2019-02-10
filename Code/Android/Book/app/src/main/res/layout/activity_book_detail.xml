@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDetailActivity">
+
+    <include layout="@layout/headline_detail"></include>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabs_rg"
+        android:layout_marginTop="50dp"/>
+
+    <RadioGroup
+        android:id="@+id/tabs_rg"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#EDEDED"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rec_tab"
+            style="@style/Custom.TabRadioButton"
+            android:checked="true"
+            android:drawableTop="@mipmap/rec"
+            android:text="书籍详情" />
+
+        <RadioButton
+            android:id="@+id/serch_tab"
+            style="@style/Custom.TabRadioButton"
+            android:drawableTop="@mipmap/user"
+            android:text="卖家详情"
+            />
+    </RadioGroup>
+
+
+</RelativeLayout>

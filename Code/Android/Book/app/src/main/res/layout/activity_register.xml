@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegisterActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="1">
+        <EditText
+            android:drawableLeft="@android:drawable/ic_menu_myplaces"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/register_edit_name"
+            android:layout_alignParentTop="true"
+            android:hint="请输入您的用户名"
+            android:layout_alignLeft="@+id/register_edit_psd_confirm"
+            android:layout_alignStart="@+id/register_edit_psd_confirm"
+            android:layout_alignRight="@+id/register_edit_psd_confirm"
+            android:layout_alignEnd="@+id/register_edit_psd_confirm" />
+
+        <EditText
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/register_edit_psw"
+            android:hint="请输入您的密码"
+            android:layout_below="@+id/register_edit_name"
+            android:layout_alignEnd="@+id/register_edit_name"
+            android:layout_alignStart="@+id/register_edit_name" />
+
+        <EditText
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/register_edit_psd_confirm"
+            android:layout_below="@+id/register_edit_psw"
+            android:layout_centerHorizontal="true"
+            android:hint="请确认您的密码" />
+        <EditText
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/register_edit_email"
+            android:layout_below="@+id/register_edit_psd_confirm"
+            android:layout_centerHorizontal="true"
+            android:hint="请输入您的邮箱" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="获取邮箱验证码"
+            android:id="@+id/register_btn_getEmailCode"
+            android:textSize="20sp"
+            android:background="@color/lightcoral"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/register_edit_email"
+            android:layout_alignLeft="@+id/register_edit_email"
+            android:layout_alignStart="@+id/register_edit_email"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/register_edit_email_code"
+            android:layout_below="@+id/register_btn_getEmailCode"
+            android:layout_centerHorizontal="true"
+            android:hint="请输入邮箱验证码" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:id="@+id/register_btn_ok"
+            android:textSize="20sp"
+            android:background="@color/lightcoral"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/register_edit_email_code"
+            android:layout_alignLeft="@+id/register_edit_email_code"
+            android:layout_alignStart="@+id/register_edit_email_code"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:id="@+id/register_btn_cancel"
+            android:textSize="20sp"
+            android:background="#56b9b4"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/register_btn_ok"
+            android:layout_alignLeft="@+id/register_btn_ok"
+            android:layout_alignStart="@+id/register_btn_ok"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+</ScrollView>
